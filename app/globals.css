@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Full palette scale — dark to light */
+  --eb-900: #160805;
+  --eb-800: #2D1008;
+  --eb-700: #511208;
+  --eb-600: #8B2E12;
+  --eb-500: #E83D0F;
+  --eb-400: #E87240;
+  --eb-300: #EBA080;
+  --eb-200: #F2C4A8;
+  --eb-100: #F7DDD0;
+  --eb-50:  #FCF0EA;
+
+  /* Semantic aliases */
+  --eb-text:         var(--eb-900);
+  --eb-accent:       var(--eb-500);
+  --eb-orange:       var(--eb-500);
+  --eb-orange-light: var(--eb-400);
+  --eb-cream:        var(--eb-100);
+  --eb-bg:           var(--eb-50);
+  --eb-primary:      var(--eb-50);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-eb-900:         var(--eb-900);
+  --color-eb-800:         var(--eb-800);
+  --color-eb-700:         var(--eb-700);
+  --color-eb-600:         var(--eb-600);
+  --color-eb-500:         var(--eb-500);
+  --color-eb-400:         var(--eb-400);
+  --color-eb-300:         var(--eb-300);
+  --color-eb-200:         var(--eb-200);
+  --color-eb-100:         var(--eb-100);
+  --color-eb-50:          var(--eb-50);
+  --color-eb-bg:          var(--eb-bg);
+  --color-eb-accent:      var(--eb-accent);
+  --color-eb-orange:      var(--eb-orange);
+  --color-eb-orange-light: var(--eb-orange-light);
+  --color-eb-cream:       var(--eb-cream);
+  --color-eb-text:        var(--eb-text);
+  --color-eb-primary:     var(--eb-primary);
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--eb-bg);
+  color: var(--eb-text);
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1rem; /* 16px */
+  }
 }
