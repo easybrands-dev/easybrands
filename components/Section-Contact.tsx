@@ -5,7 +5,7 @@ export default function CTABannerSection() {
   return (
     <section id="cta" className="relative overflow-hidden py-20 md:py-40 flex items-center">
       <Image
-        src="/cta-background.webp"
+        src="/CTA001.webp"
         alt="CTA background"
         fill
         className="object-cover"

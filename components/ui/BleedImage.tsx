@@ -25,8 +25,8 @@ export default function BleedImage({
 
   const roundedClass =
     !rounded ? ''
-    : bleed === 'left' ? 'rounded-tr-[100px]'
-    : bleed === 'right' ? 'rounded-tl-[100px]'
+    : bleed === 'left' ? 'rounded-br-[100px]'
+    : bleed === 'right' ? 'rounded-bl-[100px]'
     : ''
 
   return (

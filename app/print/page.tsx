@@ -1,9 +1,22 @@
+import type { Metadata } from 'next'
 import { Printer, Megaphone, FileCheck } from 'lucide-react'
 import ServiceDetailTemplate, { ServiceData } from '@/components/Template-Service'
 
+export const metadata: Metadata = {
+  title: 'Print & Signage',
+  description: 'Business cards, brochures, signage, and large-format print designed to bring your brand into the physical world. Print-ready files to professional standards.',
+  openGraph: {
+    title: 'Print & Signage | Easy Brands',
+    description: 'Business cards, brochures, signage, and large-format print designed to bring your brand into the physical world. Print-ready files to professional standards.',
+    images: ['/projects/motor-cycle-city/MCC004.webp'],
+  },
+}
+
 const service: ServiceData = {
-  label: 'Print & Signage',
-  title: 'Your Brand in the Physical World',
+  image: '/projects/motor-cycle-city/MCC004.webp',
+  whyImage: '/ABT001.webp',
+  label: 'Print Design',
+  title: 'Your brand in the physical world',
   intro:
     'Digital-first does not mean print is dead. The right physical touchpoints make your brand feel real, credible, and memorable.',
   body: [

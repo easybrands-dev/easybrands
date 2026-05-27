@@ -17,10 +17,12 @@ export type ServiceData = {
   whyTitle: string
   whyBody: string[]
   image?: string
+  whyImage?: string
 }
 
 export default function ServiceDetailTemplate({ service }: { service: ServiceData }) {
-  const heroImage = service.image ?? '/hero1.webp'
+  const heroImage = service.image ?? '/SVC001.webp'
+  const whyImage = service.whyImage ?? heroImage
 
   return (
     <main>
@@ -113,13 +115,13 @@ export default function ServiceDetailTemplate({ service }: { service: ServiceDat
             </div>
           </div>
 
-          <BleedImage src={heroImage} alt={service.whyTitle} bleed="right" />
+          <BleedImage src={whyImage} alt={service.whyTitle} bleed="right" />
 
         </div>
       </section>
 
       {/* Recent Work */}
-      <ProjectsGridSection title="Recent Work" heading="Work We're Proud Of" limit={3} columns={3} />
+      <ProjectsGridSection title="Recent Work" heading="Check out our projects" limit={3} columns={3} />
 
       <CTABannerSection />
 

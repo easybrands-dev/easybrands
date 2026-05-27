@@ -1,9 +1,22 @@
+import type { Metadata } from 'next'
 import { Palette, Layers, BookOpen } from 'lucide-react'
 import ServiceDetailTemplate, { ServiceData } from '@/components/Template-Service'
 
+export const metadata: Metadata = {
+  title: 'Brand Design',
+  description: 'We build brand identities that go beyond a logo. Strategy-led design covering logo systems, colour, typography, and brand guidelines for Tasmanian businesses.',
+  openGraph: {
+    title: 'Brand Design | Easy Brands',
+    description: 'We build brand identities that go beyond a logo. Strategy-led design covering logo systems, colour, typography, and brand guidelines for Tasmanian businesses.',
+    images: ['/projects/sandy-bay-garden-co/SBG003.webp'],
+  },
+}
+
 const service: ServiceData = {
+  image: '/projects/sandy-bay-garden-co/SBG003.webp',
+  whyImage: '/ABT001.webp',
   label: 'Brand Design',
-  title: 'Identities Built to Last',
+  title: 'Identities built to last',
   intro:
     'Your brand is more than a logo. It is the first impression, the lasting memory, and the reason someone chooses you over everyone else.',
   body: [

@@ -1,9 +1,22 @@
+import type { Metadata } from 'next'
 import { Monitor, ShoppingBag, Server } from 'lucide-react'
 import ServiceDetailTemplate, { ServiceData } from '@/components/Template-Service'
 
+export const metadata: Metadata = {
+  title: 'Web Design',
+  description: 'Custom website design and development for Tasmanian businesses. Fast, accessible, and built from your brand up, not from a template.',
+  openGraph: {
+    title: 'Web Design | Easy Brands',
+    description: 'Custom website design and development for Tasmanian businesses. Fast, accessible, and built from your brand up, not from a template.',
+    images: ['/projects/smokey7/SMK007.jpg'],
+  },
+}
+
 const service: ServiceData = {
-  label: 'Web Design Agency',
-  title: 'Website Design & Development',
+  image: '/projects/smokey7/SMK007.jpg',
+  whyImage: '/SVC001.webp',
+  label: 'Website Design',
+  title: 'Website design & Development',
   intro:
     'A great website is more than something that looks good. It needs to be fast, clear, and built to guide your visitors toward action.',
   body: [

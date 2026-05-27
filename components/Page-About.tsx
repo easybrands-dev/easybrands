@@ -56,14 +56,14 @@ export default function AboutPage() {
               We think and work the way you need us to. Agile, flexible, and always shaped around your style. Whether you need a full brand identity or a single campaign, we adapt to fit.
             </p>
           </div>
-          <BleedImage src="/laura-barry-P1Ntkwy2Dh4-unsplash.webp" alt="Easy Brands studio" bleed="right" />
+          <BleedImage src="/ABT001.webp" alt="Easy Brands studio" bleed="right" />
         </div>
       </section>
 
       {/* Process */}
       <section id="process" className="py-20 px-4 bg-eb-50 overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <BleedImage src="/hero1.webp" alt="Easy Brands process" bleed="left" />
+          <BleedImage src="/SVC001.webp" alt="Easy Brands process" bleed="left" />
           <div>
             <p
               className="text-eb-500 uppercase tracking-widest text-xs mb-10"

@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Button from '@/components/ui/Button'
 import { H1, H2, H3 } from '@/components/ui'
@@ -9,7 +8,7 @@ const services = [
   {
     id: 'brand',
     title: 'Brand Identity',
-    description: 'We create thoughtfully designed brands that go beyond aesthetics — they connect with your customers and help your business stand out in a crowded marketplace.',
+    description: 'We create thoughtfully designed brands that go beyond aesthetics, connecting with your customers and helping your business stand out in a crowded marketplace.',
     href: '/brand',
     icon: (
       <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -47,28 +46,16 @@ const services = [
 
 const projectCols = [
   [
-    { client: 'Brewster Coffee',      coverImage: '/projects/Brewster-Portfolio-Cover.webp',           tags: ['BRANDING'],          href: '/projects/brewster', aspect: 'aspect-[4/3] md:aspect-square' },
-    { client: 'Motor Cycle City',     coverImage: '/projects/MCC-04.webp',                             tags: ['BRANDING'],          href: '/projects/motor-cycle-city', aspect: 'aspect-[4/3]' },
+    { client: 'Brewster Coffee',      coverImage: '/projects/brewster/BRW001.webp',           tags: ['BRANDING'],          href: '/projects/brewster', aspect: 'aspect-[4/3] md:aspect-square' },
+    { client: 'Motor Cycle City',     coverImage: '/projects/motor-cycle-city/MCC004.webp',   tags: ['BRANDING'],          href: '/projects/motor-cycle-city', aspect: 'aspect-[4/3]' },
   ],
   [
-    { client: 'Sandy Bay Garden Co.', coverImage: '/projects/Sandybay-Garden-Co-Portfolio-Cover.webp', tags: ['BRANDING', 'PRINT'], href: '/projects/sandy-bay-garden-co', aspect: 'aspect-[4/3]' },
-    { client: 'Smokey7 Café',         coverImage: '/projects/Smokey7-Portfolio-Cover.jpg',             tags: ['BRANDING', 'PRINT'], href: '/projects/smokey7', aspect: 'aspect-[4/3] md:aspect-square' },
+    { client: 'Sandy Bay Garden Co.', coverImage: '/projects/sandy-bay-garden-co/SBG001.webp', tags: ['BRANDING', 'PRINT'], href: '/projects/sandy-bay-garden-co', aspect: 'aspect-[4/3]' },
+    { client: 'Smokey7 Café',         coverImage: '/projects/smokey7/SMK001.jpg',              tags: ['BRANDING', 'PRINT'], href: '/projects/smokey7', aspect: 'aspect-[4/3] md:aspect-square' },
   ],
 ]
 
 export default function HomePage() {
-  const videoRef = useRef<HTMLVideoElement>(null)
-
-  useEffect(() => {
-    const video = videoRef.current
-    if (!video) return
-    const handleScroll = () => {
-      const progress = Math.min(1, window.scrollY / window.innerHeight)
-      if (video.duration) video.currentTime = progress * video.duration
-    }
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
 
   return (
     <main>
@@ -81,7 +68,7 @@ export default function HomePage() {
               Brand identity, Web design &amp; Print for Tasmanian businesses
             </H1>
             <p className="text-eb-900/70 text-sm md:text-base max-w-2xl">
-              We help Tasmanian businesses stand out with purposeful design — from logos and brand identities to websites and print.
+              We help Tasmanian businesses stand out with purposeful design, from logos and brand identities to websites and print.
             </p>
             <div className="flex gap-4 flex-wrap justify-center">
               <Button href="/contact">Get Started</Button>
@@ -90,9 +77,10 @@ export default function HomePage() {
           </div>
           <div className="w-full aspect-square md:aspect-video rounded-2xl overflow-hidden max-w-6xl">
             <video
-              ref={videoRef}
-              src="/scene_scrub.mp4"
-              preload="auto"
+              src="/HME001.mp4"
+              poster="/HME001.webp"
+              autoPlay
+              loop
               muted
               playsInline
               className="w-full h-full object-cover"
