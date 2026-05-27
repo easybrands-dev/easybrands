@@ -36,6 +36,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local tooling
+.claude/
+
+# large local-only assets
+public/scene.mp4
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

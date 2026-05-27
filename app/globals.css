@@ -13,41 +13,30 @@
   --eb-100: #F7DDD0;
   --eb-50:  #FCF0EA;
 
-  /* Semantic aliases */
-  --eb-text:         var(--eb-900);
-  --eb-accent:       var(--eb-500);
-  --eb-orange:       var(--eb-500);
-  --eb-orange-light: var(--eb-400);
-  --eb-cream:        var(--eb-100);
-  --eb-bg:           var(--eb-50);
-  --eb-primary:      var(--eb-50);
+  --eb-dark:  #67605D;
+  --eb-light: #F7DDD0;
 }
 
 @theme inline {
-  --color-eb-900:         var(--eb-900);
-  --color-eb-800:         var(--eb-800);
-  --color-eb-700:         var(--eb-700);
-  --color-eb-600:         var(--eb-600);
-  --color-eb-500:         var(--eb-500);
-  --color-eb-400:         var(--eb-400);
-  --color-eb-300:         var(--eb-300);
-  --color-eb-200:         var(--eb-200);
-  --color-eb-100:         var(--eb-100);
-  --color-eb-50:          var(--eb-50);
-  --color-eb-bg:          var(--eb-bg);
-  --color-eb-accent:      var(--eb-accent);
-  --color-eb-orange:      var(--eb-orange);
-  --color-eb-orange-light: var(--eb-orange-light);
-  --color-eb-cream:       var(--eb-cream);
-  --color-eb-text:        var(--eb-text);
-  --color-eb-primary:     var(--eb-primary);
+  --color-eb-900:          var(--eb-900);
+  --color-eb-800:          var(--eb-800);
+  --color-eb-700:          var(--eb-700);
+  --color-eb-600:          var(--eb-600);
+  --color-eb-500:          var(--eb-500);
+  --color-eb-400:          var(--eb-400);
+  --color-eb-300:          var(--eb-300);
+  --color-eb-200:          var(--eb-200);
+  --color-eb-100:          var(--eb-100);
+  --color-eb-50:           var(--eb-50);
+  --color-eb-dark:         var(--eb-dark);
+  --color-eb-light:        var(--eb-light);
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
 }
 
 body {
-  background: var(--eb-bg);
-  color: var(--eb-text);
+  background: var(--eb-50);
+  color: var(--eb-900);
   font-family: var(--font-body), system-ui, sans-serif;
   font-size: 0.875rem; /* 14px */
   font-weight: 500;

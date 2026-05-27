@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Zalando_Sans_Expanded, Manrope } from 'next/font/google'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import Header from '@/components/Section-Header'
+import Footer from '@/components/Section-Footer'
 import './globals.css'
 
 const bigShoulders = Zalando_Sans_Expanded({
