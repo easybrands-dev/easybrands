@@ -17,12 +17,12 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-white">
+    <header className="sticky top-0 z-50 bg-eb-50">
       <div className="w-full px-4 h-18 flex items-center justify-between">
 
         {/* Logo */}
         <Link href="/">
-          <Image src="/logo.webp" alt="Easy Brands" width={160} height={40} className="h-9 w-auto md:h-12" priority />
+          <Image src="/Logo.svg" alt="Easy Brands" width={160} height={40} className="h-9 w-auto md:h-12" priority />
         </Link>
 
         {/* Desktop nav */}

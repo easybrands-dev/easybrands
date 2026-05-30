@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import { Zalando_Sans_Expanded, Manrope } from 'next/font/google'
 import Script from 'next/script'
-import Header from '@/components/Section-Header'
-import Footer from '@/components/Section-Footer'
+import ConditionalLayout from '@/components/ConditionalLayout'
 import './globals.css'
 
 const GA_ID = 'G-5OSY2M99EO'
@@ -77,9 +76,7 @@ export default function RootLayout({
         gtag('config', '${GA_ID}');
       `}</Script>
       <body className={`${bigShoulders.variable} ${dmSans.variable} antialiased`}>
-        <Header />
-        {children}
-        <Footer />
+        <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>
   )

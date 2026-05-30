@@ -12,7 +12,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      <ProjectsGridSection />
+      <ProjectsGridSection heading="Check out our projects" showFilter />
 
     </main>
   )

@@ -61,7 +61,7 @@ export default function HomePage() {
     <main>
 
       {/* Hero */}
-      <section id="hero" className="w-full px-4 py-20 bg-white">
+      <section id="hero" className="w-full px-4 py-20 bg-gradient-to-b from-eb-50 to-white">
         <div className="max-w-screen-2xl items-center mx-auto flex flex-col gap-25">
           <div className="flex flex-col items-center text-center gap-6">
             <H1 className="max-w-4xl text-center">

@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* Full palette scale — dark to light */
   --eb-900: #160805;
