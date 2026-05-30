@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { H1, H2, H3 } from '@/components/ui'
 import CTABannerSection from '@/components/Section-Contact'
-import { projects } from '@/components/Section-Projects-Grid'
+import { projects } from '@/data/projects'
 
 export type ProjectData = {
   title: string
